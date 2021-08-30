@@ -128,10 +128,10 @@ class _MyAppState extends State<MyApp> {
     await userDao.insertPerson(person);
   }
 
-  /*Future<List<Person>> getUserList() async {
+  Future<List<Person>> getUserList() async {
     final database =
         await $FloorAppDataBase.databaseBuilder('floor_database.db').build();
     final userDao = database.personDao;
     return await userDao.findAllPersons();
-  }*/
+  }
 }
